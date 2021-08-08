@@ -3,6 +3,7 @@
  */
 package entidades;
 
+
 /**
  * @author leo_dias
  *
@@ -12,6 +13,7 @@ public class Produto {
 	private String nome;
 	private double preco;
 	private int estoque;
+	
 	
 	public Produto() {
 	}
@@ -48,8 +50,12 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "Produto: " + nome + ", Preço: " + String.format("%.2f", preco) 
-				+ ", Estoque: " + estoque;
+		return "Produto: " + nome + 
+				", Preço: $" + preco + 
+				", Estoque:" + estoque;
 	}
+
+	
+	
 	
 }
